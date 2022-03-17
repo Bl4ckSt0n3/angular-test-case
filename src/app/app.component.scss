@@ -4,3 +4,14 @@
 .card-small {
     width: 100% !important;
 }
+
+.navbar-text {
+    font-size: 20px;
+    color: #fff;
+}
+.navbar-text:hover {
+    background-color: #fff;
+    color: #000;
+    min-height: 100%;
+    border-radius: 0px;
+}

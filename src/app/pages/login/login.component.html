@@ -1,0 +1,26 @@
+<div class="container mt-6">
+    <div class="row justify-content-center">
+
+        <div class="col-md-4">
+            <div class="login">
+                <ngb-alert [dismissible]="false">
+                    <strong>Warning!</strong> To add and remove users you must login with Gmail !
+                </ngb-alert>
+                <button class="btn btn-success float-end" (click)="showUsers()">Show Tables</button>
+                <form >
+                    <h2>Login</h2>
+                    <div class="mb-3">
+                      <label for="exampleInputUsername1" class="form-label">Username</label>
+                      <input type="username" class="form-control" id="exampleInputUsername1" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" disabled>
+                    </div>
+                    <button type="submit" class="btn btn-primary" disabled>Login</button>
+                    <button type="submit" class="btn btn-danger" style="float: inline-end;" #loginRef>Login with Gmail</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
