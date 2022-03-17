@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
+## Clone Repository
+
+Run `git clone https://github.com/Bl4ckSt0n3/angular-test-case.git` to clone the repository on your local system.
+
+## Dependency Injection
+
+Run `npm install` for the all dependencies in the project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
