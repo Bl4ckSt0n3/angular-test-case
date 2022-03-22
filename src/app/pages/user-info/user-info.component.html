@@ -13,6 +13,7 @@
                     <th scope="col">Last Name</th>
                     <th scope="col">E-mail</th>
                     <th scope="col">Remove</th>
+                    <th scope="col">Edit</th>
                   </tr>
                 </thead>
                 <tbody >
@@ -21,7 +22,8 @@
                       <td>{{ person.name }}</td>
                       <td>{{ person.lastname }}</td>
                       <td>{{ person.email }}</td>
-                      <td><button class="btn btn-danger" (click)="delete(person.id)">Remove</button></td>
+                      <td><button class="btn btn-danger" (click)="deleteUser(person.id)">Remove</button></td>
+                      <td><button class="btn btn-warning" (click)="updateUser(person.id, person.name, person.lastname, person.email)">Edit User</button></td>
                   </tr>
                 </tbody>
             </table>
@@ -32,6 +34,7 @@
                     <th scope="col">Company Name</th>
                     <th scope="col">Address</th>
                     <th scope="col">Remove</th>
+                    <th scope="col">Edit</th>
                   </tr>
                 </thead>
                 <tbody >
@@ -39,7 +42,8 @@
                       <th scope="row">{{ company.id }}</th>
                       <td>{{ company.companyName }}</td>
                       <td>{{ company.address }}</td>
-                      <td><button class="btn btn-danger" (click)="delete(company.id)">Remove</button></td>
+                      <td><button class="btn btn-danger" (click)="deleteCompany(company.id)">Remove</button></td>
+                      <td><button class="btn btn-warning" (click)="updateCompany(company.id, company.companyName, company.address)">Edit Company</button></td>
                   </tr>
                 </tbody>
             </table>

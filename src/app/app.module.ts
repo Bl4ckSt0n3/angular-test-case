@@ -14,6 +14,8 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { JwtModule } from '@auth0/angular-jwt';
 import { ShowUsersComponent } from './pages/login/show-users/show-users.component';
 import { AddCompanyComponent } from './pages/user-info/add-company/add-company.component';
+import { UpdateUserComponent } from './pages/user-info/update-user/update-user.component';
+import { UpdateCompanyComponent } from './pages/user-info/update-company/update-company.component';
 
 // export function migrationFactory() {
 //   // The animal table was added with version 2 but none of the existing tables or data needed
@@ -61,7 +63,9 @@ const dbConfig: DBConfig  = {
     UserInfoComponent,
     CreateUserComponent,
     ShowUsersComponent,
-    AddCompanyComponent
+    AddCompanyComponent,
+    UpdateUserComponent,
+    UpdateCompanyComponent
   ],
   imports: [
     BrowserModule,

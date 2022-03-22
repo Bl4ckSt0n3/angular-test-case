@@ -1,12 +1,12 @@
 <div class="modal-header">
-    <h3 class="modal-title">Add Company</h3>
+    <h3 class="modal-title">Update Company</h3>
         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
             <span aria-hidden="true">&times;</span>
         </button>
 </div>
 <div class="modal-body">
     <div class="form">
-        <form [formGroup]="addCompanyForm">
+        <form [formGroup]="updateCompanyForm">
             <div class="col-md-auto mt-2">
                 <label for="inputEmail4" class="form-label">Company Name</label>
                 <input type="text" class="form-control" id="inputEmail4" formControlName="companyName" [ngClass]="{ 'is-invalid': submitted && f['companyName'].errors }">
@@ -26,6 +26,6 @@
     </div>   
 </div>
 <div class="modal-footer">
-    <button type="button" id="delete" class="btn btn-success confirm-buton" (click)="confirm()">Create</button> 
+    <button type="button" id="delete" class="btn btn-success confirm-buton" (click)="confirm()">Update</button> 
     <button type="button" id="cancel" class="btn btn-secondary confirm-buton" (click)="activeModal.close('Close click')">Cancel</button>
 </div>
